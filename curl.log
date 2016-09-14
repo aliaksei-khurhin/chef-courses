@@ -1,0 +1,14 @@
+HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+Location: http://localhost:8080/testweb/
+Transfer-Encoding: chunked
+Date: Wed, 14 Sep 2016 21:27:56 GMT
+
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Powered-By: Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+Set-Cookie: JSESSIONID=84EE395B50D8EB0775797A1231494E2D; Path=/testweb
+Content-Type: text/html;charset=ISO-8859-1
+Content-Length: 85
+Date: Wed, 14 Sep 2016 21:27:56 GMT
+

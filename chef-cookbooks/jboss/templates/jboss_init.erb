@@ -3,11 +3,11 @@
 
 start(){
 echo "Starting jboss.."
-su -l <%= @jboss_user %> -c "<%= @jboss_home %>/bin/run.sh -b <%= @jboss_ip %> & "
+su -l <%= @jboss_user %> -c "<%= @jboss_home %>/bin/run.sh -b <%= @jboss_ip %> > /dev/null 2> /dev/null &"
 }
 stop(){
 echo "Stopping jboss.."
-su -l <%= @jboss_user %> -c "<%= @jboss_home %>/bin/shutdown.sh -S & "
+su -l <%= @jboss_user %> -c "<%= @jboss_home %>/bin/shutdown.sh -S > /dev/null 2> /dev/null &"
 }
 restart(){
 stop

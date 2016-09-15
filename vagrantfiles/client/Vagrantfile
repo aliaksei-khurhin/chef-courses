@@ -1,0 +1,22 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+  config.vm.define "chef-client" do |chef|
+    chef.vm.box = "sbeliakou/centos-6.7-x86_64"
+    chef.vm.hostname = "chef-client"
+    chef.vm.network :private_network, ip: "192.168.33.10"
+    chef.vm.network :forwarded_port, guest: 80, host: 8080
+    chef.vm.provider "virtualbox" do |vb|
+      vb.name = chef.vm.hostname
+      vb.cpus = 2
+      vb.memory = 2048
+    end
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    echo "192.168.33.15    chef-server" >> /etc/hosts
+  SHELL
+end
+
+ 
+

@@ -1,0 +1,18 @@
+HTTP/1.1 302 Moved Temporarily
+Server: Apache-Coyote/1.1
+X-Powered-By: Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+Location: http://192.168.33.10:8080/hudson/
+Content-Length: 0
+Date: Thu, 15 Sep 2016 16:40:36 GMT
+
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Powered-By: Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+X-Hudson: 2.0.0
+X-Hudson-CLI-Port: 35268
+Expires: 0
+X-Hudson-Theme: default
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 15 Sep 2016 16:40:36 GMT
+

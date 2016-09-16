@@ -1,0 +1,6 @@
+{
+  "name": "nginx",
+  "override_attributes": {
+    "web_server_type": "nginx_web_server"
+  }
+}

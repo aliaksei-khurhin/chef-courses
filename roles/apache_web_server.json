@@ -1,0 +1,6 @@
+{
+  "name": "apache_web_server",
+  "run_list": [
+    "recipe[web]"
+  ]
+}

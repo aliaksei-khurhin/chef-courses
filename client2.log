@@ -1,0 +1,151 @@
+192.168.33.40 -----> Existing Chef installation detected
+192.168.33.40 Starting the first Chef Client run...
+192.168.33.40 Starting Chef Client, version 12.13.37[0m
+192.168.33.40 resolving cookbooks for run list: ["web"][0m
+192.168.33.40 Synchronizing Cookbooks:[0m
+192.168.33.40   - web (0.1.0)[0m
+192.168.33.40 Installing Cookbook Gems:[0m
+192.168.33.40 Compiling Cookbooks...[0m
+192.168.33.40 Converging 1 resources[0m
+192.168.33.40 Recipe: web::default[0m
+192.168.33.40   * web_serv[install server] action install (up to date)
+192.168.33.40   * web_serv[install server] action setup (up to date)
+192.168.33.40   * web_serv[install server] action start (up to date)
+192.168.33.40   * yum_package[nginx] action install
+192.168.33.40     [32m- install version 1.10.1-1.el6 of package nginx[0m
+192.168.33.40 [0m  * file[/usr/share/nginx/html/index.html] action create
+192.168.33.40     [32m- update content in file /usr/share/nginx/html/index.html from ff6311 to b9dc36[0m
+192.168.33.40     [37m--- /usr/share/nginx/html/index.html	2016-07-02 20:41:18.000000000 +0100[0m
+192.168.33.40     [37m+++ /usr/share/nginx/html/.chef-index.html20160916-18425-i4akdo	2016-09-16 14:44:28.969999876 +0100[0m
+192.168.33.40     [37m@@ -1,117 +1,2 @@[0m
+192.168.33.40     [37m-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">[0m
+192.168.33.40     [37m-    <head>[0m
+192.168.33.40     [37m-        <title>Test Page for the Nginx HTTP Server on EPEL</title>[0m
+192.168.33.40     [37m-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />[0m
+192.168.33.40     [37m-        <style type="text/css">[0m
+192.168.33.40     [37m-            /*<![CDATA[*/[0m
+192.168.33.40     [37m-            body {[0m
+192.168.33.40     [37m-                background-color: #fff;[0m
+192.168.33.40     [37m-                color: #000;[0m
+192.168.33.40     [37m-                font-size: 0.9em;[0m
+192.168.33.40     [37m-                font-family: sans-serif,helvetica;[0m
+192.168.33.40     [37m-                margin: 0;[0m
+192.168.33.40     [37m-                padding: 0;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            :link {[0m
+192.168.33.40     [37m-                color: #c00;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            :visited {[0m
+192.168.33.40     [37m-                color: #c00;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            a:hover {[0m
+192.168.33.40     [37m-                color: #f50;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            h1 {[0m
+192.168.33.40     [37m-                text-align: center;[0m
+192.168.33.40     [37m-                margin: 0;[0m
+192.168.33.40     [37m-                padding: 0.6em 2em 0.4em;[0m
+192.168.33.40     [37m-                background-color: #294172;[0m
+192.168.33.40     [37m-                color: #fff;[0m
+192.168.33.40     [37m-                font-weight: normal;[0m
+192.168.33.40     [37m-                font-size: 1.75em;[0m
+192.168.33.40     [37m-                border-bottom: 2px solid #000;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            h1 strong {[0m
+192.168.33.40     [37m-                font-weight: bold;[0m
+192.168.33.40     [37m-                font-size: 1.5em;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            h2 {[0m
+192.168.33.40     [37m-                text-align: center;[0m
+192.168.33.40     [37m-                background-color: #3C6EB4;[0m
+192.168.33.40     [37m-                font-size: 1.1em;[0m
+192.168.33.40     [37m-                font-weight: bold;[0m
+192.168.33.40     [37m-                color: #fff;[0m
+192.168.33.40     [37m-                margin: 0;[0m
+192.168.33.40     [37m-                padding: 0.5em;[0m
+192.168.33.40     [37m-                border-bottom: 2px solid #294172;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            hr {[0m
+192.168.33.40     [37m-                display: none;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            .content {[0m
+192.168.33.40     [37m-                padding: 1em 5em;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            .alert {[0m
+192.168.33.40     [37m-                border: 2px solid #000;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-            img {[0m
+192.168.33.40     [37m-                border: 2px solid #fff;[0m
+192.168.33.40     [37m-                padding: 2px;[0m
+192.168.33.40     [37m-                margin: 2px;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            a:hover img {[0m
+192.168.33.40     [37m-                border: 2px solid #294172;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            .logos {[0m
+192.168.33.40     [37m-                margin: 1em;[0m
+192.168.33.40     [37m-                text-align: center;[0m
+192.168.33.40     [37m-            }[0m
+192.168.33.40     [37m-            /*]]>*/[0m
+192.168.33.40     [37m-        </style>[0m
+192.168.33.40     [37m-    </head>[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-    <body>[0m
+192.168.33.40     [37m-        <h1>Welcome to <strong>nginx</strong> on EPEL!</h1>[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-        <div class="content">[0m
+192.168.33.40     [37m-            <p>This page is used to test the proper operation of the[0m
+192.168.33.40     [37m-            <strong>nginx</strong> HTTP server after it has been[0m
+192.168.33.40     [37m-            installed. If you can read this page, it means that the[0m
+192.168.33.40     [37m-            web server installed at this site is working[0m
+192.168.33.40     [37m-            properly.</p>[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-            <div class="alert">[0m
+192.168.33.40     [37m-                <h2>Website Administrator</h2>[0m
+192.168.33.40     [37m-                <div class="content">[0m
+192.168.33.40     [37m-                    <p>This is the default <tt>index.html</tt> page that[0m
+192.168.33.40     [37m-                    is distributed with <strong>nginx</strong> on[0m
+192.168.33.40     [37m-                    EPEL.  It is located in[0m
+192.168.33.40     [37m-                    <tt>/usr/share/nginx/html</tt>.</p>[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-                    <p>You should now put your content in a location of[0m
+192.168.33.40     [37m-                    your choice and edit the <tt>root</tt> configuration[0m
+192.168.33.40     [37m-                    directive in the <strong>nginx</strong>[0m
+192.168.33.40     [37m-                    configuration file[0m
+192.168.33.40     [37m-                    <tt>/etc/nginx/nginx.conf</tt>.</p>[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-                </div>[0m
+192.168.33.40     [37m-            </div>[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-            <div class="logos">[0m
+192.168.33.40     [37m-                <a href="http://nginx.net/"><img[0m
+192.168.33.40     [37m-                    src="nginx-logo.png" [0m
+192.168.33.40     [37m-                    alt="[ Powered by nginx ]"[0m
+192.168.33.40     [37m-                    width="121" height="32" /></a>[0m
+192.168.33.40     [37m-[0m
+192.168.33.40     [37m-                <a href="http://fedoraproject.org/"><img [0m
+192.168.33.40     [37m-                    src="poweredby.png" [0m
+192.168.33.40     [37m-                    alt="[ Powered by Fedora EPEL ]"[0m
+192.168.33.40     [37m-                    width="88" height="31" /></a>[0m
+192.168.33.40     [37m-            </div>[0m
+192.168.33.40     [37m-        </div>[0m
+192.168.33.40     [37m-    </body>[0m
+192.168.33.40     [37m-</html>[0m
+192.168.33.40     [37m+<html>This is NGINX provider test page.</html>[0m
+192.168.33.40     [32m- change mode from '0644' to '0755'[0m
+192.168.33.40     [32m- change owner from 'root' to 'nginx'[0m
+192.168.33.40     [32m- change group from 'root' to 'nginx'[0m
+192.168.33.40 [0m  * service[nginx] action start
+192.168.33.40     [32m- start service service[nginx][0m
+192.168.33.40 [0m[0m
+192.168.33.40 Running handlers:[0m
+192.168.33.40 Running handlers complete
+192.168.33.40 [0m[0m
+192.168.33.40 Deprecated features used![0m
+192.168.33.40   Using an LWRP provider by its name (WebWebNginx) directly is no longer supported in Chef 12 and will be removed.  Use Chef::ProviderResolver.new(node, resource, action) instead. at 1 location:[0m
+192.168.33.40     - /var/chef/cache/cookbooks/web/recipes/default.rb:20:in `block in from_file'[0m
+192.168.33.40 [0m
+192.168.33.40 Chef Client finished, 3/6 resources updated in 39 seconds[0m

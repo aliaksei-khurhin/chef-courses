@@ -1,0 +1,36 @@
+192.168.33.10 -----> Existing Chef installation detected
+192.168.33.10 Starting the first Chef Client run...
+192.168.33.10 Starting Chef Client, version 12.13.37[0m
+192.168.33.10 resolving cookbooks for run list: ["web"][0m
+192.168.33.10 Synchronizing Cookbooks:[0m
+192.168.33.10   - web (0.1.0)[0m
+192.168.33.10 Installing Cookbook Gems:[0m
+192.168.33.10 Compiling Cookbooks...[0m
+192.168.33.10 Converging 1 resources[0m
+192.168.33.10 Recipe: web::default[0m
+192.168.33.10   * web_serv[install server] action install (up to date)
+192.168.33.10   * web_serv[install server] action setup (up to date)
+192.168.33.10   * web_serv[install server] action start (up to date)
+192.168.33.10   * yum_package[httpd] action install
+192.168.33.10     [32m- install version 2.2.15-54.el6.centos of package httpd[0m
+192.168.33.10 [0m  * file[/var/www/html/index.html] action create
+192.168.33.10     [32m- create new file /var/www/html/index.html[0m
+192.168.33.10     [32m- update content in file /var/www/html/index.html from none to 504521[0m
+192.168.33.10     [37m--- /var/www/html/index.html	2016-09-16 14:40:11.112999973 +0100[0m
+192.168.33.10     [37m+++ /var/www/html/.chef-index.html20160916-18210-uej8co	2016-09-16 14:40:11.110999974 +0100[0m
+192.168.33.10     [37m@@ -1 +1,2 @@[0m
+192.168.33.10     [37m+<html>This is an Apache provider test page.</html>[0m
+192.168.33.10     [32m- change mode from '' to '0755'[0m
+192.168.33.10     [32m- change owner from '' to 'apache'[0m
+192.168.33.10     [32m- change group from '' to 'apache'[0m
+192.168.33.10 [0m  * service[httpd] action start
+192.168.33.10     [32m- start service service[httpd][0m
+192.168.33.10 [0m[0m
+192.168.33.10 Running handlers:[0m
+192.168.33.10 Running handlers complete
+192.168.33.10 [0m[0m
+192.168.33.10 Deprecated features used![0m
+192.168.33.10   Using an LWRP provider by its name (WebWebApache) directly is no longer supported in Chef 12 and will be removed.  Use Chef::ProviderResolver.new(node, resource, action) instead. at 1 location:[0m
+192.168.33.10     - /var/chef/cache/cookbooks/web/recipes/default.rb:20:in `block in from_file'[0m
+192.168.33.10 [0m
+192.168.33.10 Chef Client finished, 3/6 resources updated in 17 seconds[0m

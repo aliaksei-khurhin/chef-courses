@@ -6,9 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 
-if node['web_server_type'] == "apache_web_server"
+if node.role?("#{node['web_server_type']['httpd']}")  
   prov = 'web_web-apache'
-elsif node['web_server_type'] == "nginx_web_server"
+elsif node.role?("#{node['web_server_type']['nginx']}")
   prov = 'web_web-nginx'
 else
   execute 'bash' do

@@ -1,6 +1,0 @@
-{
-  "name": "apache",
-  "override_attributes": {
-    "web_server_type": "apache_web_server"
-  }
-}

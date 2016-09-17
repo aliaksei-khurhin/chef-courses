@@ -1,0 +1,9 @@
+{
+  "name": "chef-dev",
+  "override_attributes": {
+    "web_server_type": {
+      "nginx": "nginx_web_server",
+      "httpd": "apache_web_server"
+    }
+  }
+}

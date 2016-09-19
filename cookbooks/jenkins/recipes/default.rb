@@ -4,6 +4,7 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-include_recipe 'install'
-include_recipe 'plugins'
-include_recipe 'configure'
+# installing jenkins using 3 recipes
+include_recipe 'jenkins::install'
+include_recipe 'jenkins::plugins'
+include_recipe 'jenkins::configure'

@@ -1,3 +1,12 @@
+# creating jenkins plugin directory
+directory '/var/lib/jenkins/plugins' do
+  owner 'jenkins'
+  group 'jenkins'
+  mode '0755'
+  action :create
+end
+
+# setting hash with plugins names and URL's
 plugins = {
 "build-token-root.hpi" => "http://updates.jenkins-ci.org/latest/build-token-root.hpi",
 "config-file-provider.hpi" => "http://updates.jenkins-ci.org/latest/config-file-provider.hpi",
@@ -41,6 +50,7 @@ plugins = {
 "greenballs.hpi" => "http://updates.jenkins-ci.org/latest/greenballs.hpi"
 }
 
+# installing plugins by internet
 plugins.each do | key,value |
   remote_file "/var/lib/jenkins/plugins/#{key}" do
     source value

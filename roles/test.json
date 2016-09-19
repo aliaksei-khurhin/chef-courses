@@ -1,0 +1,8 @@
+{
+  "name": "test",
+  "run_list": [
+    "recipe[tomcat]",
+    "recipe[nginx]",
+    "recipe[jenkins]"
+  ]
+}

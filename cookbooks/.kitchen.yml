@@ -1,0 +1,24 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: sbeliakou/centos-6.7-x86_64
+
+suites:
+  - name: default
+    cookbook 'jenkins_task', path: '/home/Student/Documents/chef-repo/cookbooks/jenkins'
+    cookbook 'tomcat', path: '/home/Student/Documents/chef-repo/cookbooks/tomcat'
+    cookbook 'web_nginx', path: '/home/Student/Documents/chef-repo/cookbooks/nginx'
+    run_list:
+      - recipe[tomcat::default]
+      - recipe[nginx::default]
+      - recipe[jenkins::default]
+    attributes:
+       web_ports:
+         nginx_port: '80'
+         jenkins_port: '8081'
+         tomcat_port: '8080'

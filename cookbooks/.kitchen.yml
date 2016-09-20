@@ -10,9 +10,9 @@ platforms:
 
 suites:
   - name: default
-    cookbook 'jenkins_task', path: '/home/Student/Documents/chef-repo/cookbooks/jenkins'
+    cookbook 'jenkins, path: '/home/Student/Documents/chef-repo/cookbooks/jenkins'
     cookbook 'tomcat', path: '/home/Student/Documents/chef-repo/cookbooks/tomcat'
-    cookbook 'web_nginx', path: '/home/Student/Documents/chef-repo/cookbooks/nginx'
+    cookbook 'web, path: '/home/Student/Documents/chef-repo/cookbooks/nginx'
     run_list:
       - recipe[tomcat::default]
       - recipe[nginx::default]

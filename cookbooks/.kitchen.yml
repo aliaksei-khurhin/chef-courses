@@ -12,7 +12,7 @@ suites:
   - name: default
     cookbook 'jenkins, path: '/home/Student/Documents/chef-repo/cookbooks/jenkins'
     cookbook 'tomcat', path: '/home/Student/Documents/chef-repo/cookbooks/tomcat'
-    cookbook 'web, path: '/home/Student/Documents/chef-repo/cookbooks/nginx'
+    cookbook 'web', path: '/home/Student/Documents/chef-repo/cookbooks/nginx'
     run_list:
       - recipe[tomcat::default]
       - recipe[nginx::default]
